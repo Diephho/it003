@@ -5,7 +5,7 @@
 using namespace std;
 using namespace chrono;
 
-void heapify(float arr[], int n, int i) {
+void heapify(double arr[], int n, int i) {
     int largest = i;
     int left = 2 * i + 1;
     int right = 2 * i + 2;
@@ -24,7 +24,7 @@ void heapify(float arr[], int n, int i) {
     }
 }
 
-void heapsort(float arr[]) {
+void heapsort(double arr[]) {
     int n = 1000000;
 
     for (int i = n / 2 - 1; i >= 0; i--) {
@@ -36,12 +36,12 @@ void heapsort(float arr[]) {
         heapify(arr, i, 0);
     }
 }
-float a[1000000];
+double a[1000000];
 int main()
 {
     auto start = high_resolution_clock::now();
     ifstream fi("test1.txt");
-    ofstream fo("ans21.txt");
+    ofstream fo("ans22.txt");
     for (int i = 0; i < 1e6; i++)
         fi >> a[i];
     heapsort(a);

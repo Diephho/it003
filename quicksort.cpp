@@ -4,9 +4,9 @@
 using namespace std;
 using namespace chrono;
 
-void quicksort(float arr[], int left, int right) {
+void quicksort(double arr[], int left, int right) {
     int i = left, j = right;
-    float pivot = arr[(left + right) / 2];
+    double pivot = arr[(left + right) / 2];
 
     while (i <= j) {
         while (arr[i] < pivot) i++;
@@ -21,7 +21,7 @@ void quicksort(float arr[], int left, int right) {
     if (left < j) quicksort(arr, left, j);
     if (i < right) quicksort(arr, i, right);
 }
-    float a[1000000];
+    double a[1000000];
 int main()
 {
     auto start = high_resolution_clock::now();
