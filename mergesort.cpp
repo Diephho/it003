@@ -66,8 +66,8 @@ double a[1000000];
 int main()
 {
     auto start = high_resolution_clock::now();
-    ifstream fi("test1.txt");
-    ofstream fo("ans31.txt");
+    ifstream fi("test.txt");
+    ofstream fo("ans.txt");
     for (int i = 0; i < 1e6; i++)
         fi >> a[i];
     mergeSort(a, 0, 1000000 - 1);
