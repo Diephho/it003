@@ -199,7 +199,7 @@ void mergeSort(double arr[], int left, int right) {
 
 ## Nhận_xét_kết_quả_thực_nghiệm
 - Đối với bộ dữ liệu gồm một triệu phần tử, các thuật toán sắp xếp có thời gian giao động từ khoảng 3600-4600 micro giây.
-- Trường hợp dữ liệu tăng dần (Test1): HeapSort có tốc độ nhanh hơn các thuật toán khác
+- Trường hợp dữ liệu tăng dần (Test1): HeapSort có tốc độ chậm hơn các thuật toán khác
 - Trường hợp dữ liệu giảm dần (Test2): QuickSort có tốc độ nhanh hơn các thuật toán khác
 - Trường hợp dữ liệu ngẫu nhiên (Test3,Test4...): QuickSort là thuật toán có nhiều trường hợp nhanh nhất trong số các thuật toán được đánh giá. std::sort cũng chiếm một vài trường hợp nhanh nhất.
 - Từ kết quả đánh giá, ta có thể nhận thấy rằng QuickSort là thuật toán sắp xếp nhanh nhất trong số các thuật toán được đánh giá, và có thể hiệu quả trong hầu hết các trường hợp. std::sort cũng là một lựa chọn tốt với thời gian sắp xếp khá nhanh và đáp ứng được nhiều yêu cầu hiệu suất.
