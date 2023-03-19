@@ -9,7 +9,7 @@
 ## Mục lục
 - [Đề bài](#Đề_bài)
 - [Công cụ](#Công_cụ)
-- [Tạo	bộ	dữ	liệu](#Tạo_bộ_dữ_liệu)
+- [Tạo	bộ	dữ	liệu](#Tạo_10_bộ_dữ_liệu)
 - [QuickSort](#QuickSort)
 - [HeapSort](#HeapSort)
 - [MergeSort](#MergeSort)
@@ -26,7 +26,7 @@
 > Máy tính cá nhân( Inspiron 15 5000 )     
 > Code::Blocks 20.03     
 > Visual Studio Code    
-## Tạo_bộ_dữ_liệu
+## Tạo_10_bộ_dữ_liệu
 ```
 #include <bits/stdc++.h>
 using namespace std;
@@ -42,33 +42,25 @@ int main()
         return current += 0.01; });
     reverse_copy(ascending_array.begin(), ascending_array.end(), descending_array.begin());
 
+    vector<double> random_array(1000000);
+
+    ofstream f1("test1");
+    for (int i = 0; i < 1e6; i++)
+        f1 << ascending_array[i] << " ";
+        f1.close();
+    ofstream f2("test2");
+    for (int i = 0; i < 1e6; i++)
+        f2 << descending_array[i] << " ";
+        f2.close();
     // Tạo 8 dãy số ngẫu nhiên
-    vector<vector<double>> random_arrays(8, vector<double>(1000000));
-    for (int i = 0; i < 8; ++i)
+    for (int i = 3; i <= 10; i++)
     {
-        generate(random_arrays[i].begin(), random_arrays[i].end(), rand);
+        string s = "test" + to_string(i);
+        generate(random_array.begin(), random_array.end(), rand);
+    ofstream f3(s);
+    for (int i = 0; i < 1e6; i++)
+        f3 << random_array[i] << " ";
     }
-
-    // kết hợp tất cả các dãy số để tạo thành bộ dữ liệu cuối cùng
-    vector<vector<double>> data;
-    data.push_back(ascending_array);
-    data.push_back(descending_array);
-    for (int i = 0; i < 8; ++i)
-    {
-        data.push_back(random_arrays[i]);
-    }
-
-    // lưu bộ dữ liệu vào tệp
-    ofstream fo("data.txt");
-    for (const auto &array : data)
-    {
-        for (const auto &element : array)
-        {
-            fo << element << " ";
-        }
-        fo << endl;
-    }
-    fo.close();
     return 0;
 }
 ```
