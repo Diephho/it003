@@ -191,11 +191,11 @@ void mergeSort(double arr[], int left, int right) {
 
 ## Nhận_xét_kết_quả_thực_nghiệm
 - Đối với bộ dữ liệu gồm một triệu phần tử, các thuật toán sắp xếp có thời gian giao động từ khoảng 3600-4600 micro giây.
-- Trường hợp dữ liệu tăng dần (Test1): HeapSort có tốc độ chậm hơn các thuật toán khác
-- Trường hợp dữ liệu giảm dần (Test2): QuickSort có tốc độ nhanh hơn các thuật toán khác
-- Trường hợp dữ liệu ngẫu nhiên (Test3,Test4...): QuickSort là thuật toán có nhiều trường hợp nhanh nhất trong số các thuật toán được đánh giá. std::sort cũng chiếm một vài trường hợp nhanh nhất.
+- Trường hợp dữ liệu tăng dần (Test1): HeapSort có tốc độ chậm hơn các thuật toán khác (4594 micro giây). QuickSort có tốc độ nhanh nhất (4037 micro giây).
+- Trường hợp dữ liệu giảm dần (Test2): MergeSort có tốc độ chậm hơn các thuật toán khác (4493 micro giây), QuickSort có tốc độ nhanh nhất (3884 micro giây).
+- Trường hợp dữ liệu ngẫu nhiên (Test3,Test4...): QuickSort là thuật toán có nhiều trường hợp nhanh nhất trong số các thuật toán được đánh giá (Test7,8,9,10); std::sort cũng chiếm một vài trường hợp nhanh nhất(Test 3,4,5,6). HeapSort và MergeSort đều có tốc độ trung bình và gần bằng nhau ở đa số các trường hợp.
 - Từ kết quả đánh giá, ta có thể nhận thấy rằng QuickSort là thuật toán sắp xếp nhanh nhất trong số các thuật toán được đánh giá, và có thể hiệu quả trong hầu hết các trường hợp. std::sort cũng là một lựa chọn tốt với thời gian sắp xếp khá nhanh và đáp ứng được nhiều yêu cầu hiệu suất.
 - HeapSort và MergeSort đều đảm bảo thời gian sắp xếp ổn định và không bị ảnh hưởng bởi trường hợp tốt hoặc xấu của bộ dữ liệu, nhưng chúng không thể sắp xếp dữ liệu nhanh như QuickSort và std::sort.
 - Với bộ dữ liệu ngẫu nhiên, QuickSort và std::sort là những lựa chọn tốt, vì chúng có thể sắp xếp các phần tử của bộ dữ liệu một cách nhanh chóng và hiệu quả. MergeSort và HeapSort cũng có thể được sử dụng, nhưng có thể không hiệu quả bằng QuickSort và std::sort trong một số trường hợp.
+  Tóm lại, việc chọn thuật toán phù hợp nhất để sắp xếp dữ liệu phụ thuộc vào các yêu cầu hiệu suất của ứng dụng và tính chất của bộ dữ liệu.
 
-  Tóm lại, việc chọn thuật toán phù hợp nhất để sắp xếp dữ liệu phụ thuộc vào các yêu cầu hiệu suất của ứng dụng và tính chất của bộ dữ liệu. 
