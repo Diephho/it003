@@ -12,7 +12,6 @@ int main()
         return current += 0.01; });
     reverse_copy(ascending_array.begin(), ascending_array.end(), descending_array.begin());
 
-    // Tạo 8 dãy số ngẫu nhiên
     vector<double> random_array(1000000);
 
     ofstream f1("test1");
@@ -23,6 +22,7 @@ int main()
     for (int i = 0; i < 1e6; i++)
         f2 << descending_array[i] << " ";
         f2.close();
+    // Tạo 8 dãy số ngẫu nhiên
     for (int i = 3; i <= 10; i++)
     {
         string s = "test" + to_string(i);
