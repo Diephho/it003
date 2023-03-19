@@ -177,7 +177,7 @@ void mergeSort(double arr[], int left, int right) {
 ## Kết_quả_thử_nghiệm
 
 - Bảng dữ liệu
-`Đơn vị đo lường : micro giây (msec)`
+`Đơn vị đo lường : micro giây `
 
 | Test |QuickSort|HeapSort|MergeSort|std::sort|
 |------|-----------|---------|-----------|-----------|

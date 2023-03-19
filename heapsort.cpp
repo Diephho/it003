@@ -49,6 +49,6 @@ int main()
         fo << a[i];
     auto end = high_resolution_clock::now();
     auto time_taken = duration_cast<milliseconds>(end - start);
-    cout << "Time taken: " << time_taken.count() << " msecs." << endl;
+    cout << "Time taken: " << time_taken.count() << " microseconds." << endl;
     return 0;
 }
