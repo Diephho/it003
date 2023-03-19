@@ -23,7 +23,7 @@
 4. Viết báo cáo thử nghiệm: kết quả thử nghiệm ở dạng bảng dữ liệu và dạng biểu đồ; nhận xét kết quả thực nghiệm; báo cáo nộp bằng file PDF
 
 ## Công_cụ
-> Máy tính cá nhân( Inspiron 15 5000 )     
+> Máy tính cá nhân (Inspiron 15 5000)     
 > Code::Blocks 20.03     
 > Visual Studio Code    
 ## Tạo_10_bộ_dữ_liệu
