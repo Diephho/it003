@@ -197,5 +197,6 @@ void mergeSort(double arr[], int left, int right) {
 - Từ kết quả đánh giá, ta có thể nhận thấy rằng QuickSort là thuật toán sắp xếp nhanh nhất trong số các thuật toán được đánh giá, và có thể hiệu quả trong hầu hết các trường hợp. std::sort cũng là một lựa chọn tốt với thời gian sắp xếp khá nhanh và đáp ứng được nhiều yêu cầu hiệu suất.
 - HeapSort và MergeSort đều đảm bảo thời gian sắp xếp ổn định và không bị ảnh hưởng bởi trường hợp tốt hoặc xấu của bộ dữ liệu, nhưng chúng không thể sắp xếp dữ liệu nhanh như QuickSort và std::sort.
 - Với bộ dữ liệu ngẫu nhiên, QuickSort và std::sort là những lựa chọn tốt, vì chúng có thể sắp xếp các phần tử của bộ dữ liệu một cách nhanh chóng và hiệu quả. MergeSort và HeapSort cũng có thể được sử dụng, nhưng có thể không hiệu quả bằng QuickSort và std::sort trong một số trường hợp.
+
   Tóm lại, việc chọn thuật toán phù hợp nhất để sắp xếp dữ liệu phụ thuộc vào các yêu cầu hiệu suất của ứng dụng và tính chất của bộ dữ liệu.
 
